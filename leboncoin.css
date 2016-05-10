@@ -1,0 +1,275 @@
+nav ul
+{
+    list-style-type: none;
+}
+.menu1:hover {
+    text-decoration:underline;
+    color: white;
+}
+nav li
+{
+    display: inline-block;
+}
+li a
+{
+    color: white;
+    text-decoration: none;
+}
+header {
+    background-color:  #ff6600;  /*orange*/
+}
+header form {
+    float: right;
+    /* background: none repeat scroll 0 0 #e3dccd;*/
+    background-color: #A9A9A9; /*gris */
+    border-radius: 10px 10px 10px 10px;
+    padding:8px;
+
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.logo
+{
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+
+}
+.ligne
+{
+    clear: left;
+}
+.menu
+{
+    padding-top: 50px;
+    height: 60px;
+}
+.menu1
+{
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 10px;
+}
+.centreligne
+{
+    width: 40%;
+    box-sizing: border-box; /*pour que toutes les zones aient */
+    /*la meme largeur*/
+}
+.positionblock
+{
+    width: 60%;
+    box-sizing: border-box;
+}
+
+header
+{
+    text-align: center;
+}
+section, aside {
+    display: inline-block;
+    vertical-align: top;
+}
+section
+{
+    width: 79%;
+}
+aside
+{
+    width: 20.5%;
+    vertical-align: 50%;
+    text-align:center;
+}
+.imgaside
+{
+    width: 160px;
+    height: 140px;
+    /*padding-left: 6px;
+    padding-right: 6px;*/
+    vertical-align: middle;
+
+}
+.titrebleu
+{
+    color: #3973ac; /*bleu*/
+}
+.prix
+{
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color:  #ff6600;  /*orange*/
+}
+.savoirplus
+{
+    background-color: #ff6600; /*orange*/
+    list-style-type: none;
+    font-size: 20px;
+    color: white;
+}
+.savoirplus:hover
+{
+    text-decoration:underline;
+    color: white;
+}
+.titreA
+{
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+.corps
+{
+    vertical-align: middle;
+}
+section article img
+{
+    float: left;
+}
+.margeg
+{
+    padding-left: 200px;
+}
+.basdepage
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.basdepage
+{
+    width: 23%;
+}
+.posligne1
+{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.posligne2
+{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.titre
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+aside h2
+{
+    margin-top: 0;
+    color: white;
+    background-color:  #ff6600;  /*orange*/
+    height: 40px;
+}
+.fond
+{
+    background-color: #A9A9A9; /*gris*/
+}
+.bouton
+{
+    background-color: #3973ac; /*bleu*/
+    color: white;
+}
+body
+{
+
+    margin-top: 3%;
+    margin-left: 8%;
+    width: 85%;
+    height: 85%;
+}
+section > h2, article > h2, .menu2, #ssmenu2, .responsive
+{
+    display: none;
+}
+
+/* quand on fait du responsive, on commence par la version mobile et on va vers la version pc */
+
+/* version mobile */
+
+@media screen and (max-width: 680px)
+{
+    body
+    {
+        width: auto;
+    }
+    .corpsd, .menu
+    {
+        display: none;
+    }
+
+
+    /*
+    .menu2
+    {
+        display: inline-block;
+        padding-top: 50px;
+        width: 80%;
+        background-color:  #ff6600; */ /*orange*/
+    /*height: 50px;
+} */
+    li a
+    {
+        background-color:  #ff6600;  /*orange*/
+        color : white;
+    }
+
+    #ssmenu1
+    {
+        display: none;
+    }
+
+    #ssmenu2
+    {
+        display: block;
+        padding: 1%;
+
+    }
+    .positionblock
+    {
+        margin: 1%;
+    }
+
+} /*fin version mobile */
+
+
+/* version tablette */
+
+@media screen and (min-width: 680px) and (max-width: 992px)
+{
+
+    body
+    {
+        width: 85%;
+        /*margin: 3%;*/
+    }
+    .corpsd
+    {
+        display: none;
+    }
+    section
+    {
+        width: 100%;
+    }
+    .basdepage
+    {
+        width: 24%;
+    }
+    .menu1
+    {
+        font-weight: bold;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .menu2
+    {
+        display: none;
+    }
+}
+
+/* fin version tablette */
